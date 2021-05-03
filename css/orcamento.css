@@ -1,4 +1,83 @@
 main{
     display: flex;
+    flex-direction: row;
     min-height: 100vh;
+    padding: 50px;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+    padding: 0px 20px;
+}
+
+form{
+    width: 100%;
+}
+
+section.img-wrapper img {
+    height: 60%;
+}
+
+input[type="text"], input[type="email"], input[type="submit"], textarea
+{
+    padding: 5px;
+    outline: none;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 50px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.label-form{
+    margin: 10px 0px;
+}
+
+.title{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin: 10px 0px;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.checkbox-wrapper, .radio-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px;
+}
+
+.checkbox-wrapper-item, .radio-wrapper-item {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.checkbox-wrapper-item > label, .radio-wrapper-item > label {
+    font-weight: unset;
 }
