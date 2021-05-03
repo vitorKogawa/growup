@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./../css/reset.css">
     <link rel="stylesheet" href="./../css/global.css">
     <link rel="stylesheet" href="./../css/nav.css">
-    <link rel="stylesheet" href="./../css/orcamento.css>
+    <link rel="stylesheet" href="./../css/orcamento.css">
     <link rel="stylesheet" href="./../css/footer.css">
     <title>GrowUp</title>
 </head>
@@ -34,13 +34,75 @@
                 </li>
             </ul>
         </nav>
-    </header> 
+    </header>
     <main>
-
+        <!-- 
+            Crie um arquivo orcamento.html
+            No arquivo orcamento.html  adicione um formulário com os seguintes campos:
+            Nome (text)
+            Email (email)
+            Telefone (tel)
+            Serviços  com opções Desenvolvimento Web, Marketing Digital, Consultoria UX (checkbox)
+            Urgência na entrega (radiobutton)
+            Descrição (textarea)
+            Adicione um link para pagina de orçamento no banner da Home.
+            Não esqueça de atualizar seu código no github! 
+        -->
+        <section class="title-wrapper">
+            <h1>Tire seu Orçamento conosco</h1>
+        </section>
+        <section class="form-wrapper">
+            <div class="field-wrapper">
+                <label class="label-form">Nome</label>
+                <input type="text" name="nome" required>
+            </div>
+            <div class="field-wrapper">
+                <label class="label-form">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="field-wrapper">
+                <label class="label-form">Telefone</label>
+                <input type="text" name="telefone" required>
+            </div>
+            <div class="field-wrapper">
+                <label class="label-form">Selecione o(s) tipo(s) de serviço:</label>
+                <div class="checkbox-wrapper">
+                    <div class="checkbox-wrapper-item">
+                        <label for="debweb">Desenvolvimento Web</label>
+                        <input type="checkbox" name="desenvolvimento_web" id="desenvolvimento_web">
+                    </div>
+                    <div class="checkbox-wrapper-item">
+                        <label for="debweb  ">Marketing Digital</label>
+                        <input type="checkbox" name="marketing_digital" id="marketing_digital">
+                    </div>
+                    <div class="checkbox-wrapper-item">
+                        <label for="debweb">Consultoria UX</label>
+                        <input type="checkbox" name="consultoria_ux" id="consultoria_ux">
+                    </div>
+                </div>
+            </div>
+            <div class="field-wrapper">
+                <label class="label-form">Urgência na entrega?</label>
+                <div class="radio-wrapper">
+                    <div class="radio-wrapper-item">
+                        <input type="radio" name="urgencia_options" id="urgencia_yes">
+                        <label for="urgencia_yes">Sim</label>
+                    </div>
+                    <div class="radio-wrapper-item">
+                        <input type="radio" name="urgencia_options" id="urgencia_no">
+                        <label for="urgencia_no">Não</label>
+                    </div>
+                </div>
+            </div>
+            <div class="field-wrapper">
+                <label class="label-form">Descrição do seu site</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            </div>
+        </section>
     </main>
     <footer>
         <p><span>&copy</span>Copyright - GrowUp</p>
-    </footer>  
+    </footer>
 </body>
 
 </html>
