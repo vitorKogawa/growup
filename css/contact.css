@@ -51,6 +51,16 @@ input[type="submit"]{
     cursor: pointer;
 }
 
+.radio-wrapper{
+    display: flex;
+    margin: 20px 0px;
+    justify-content: flex-start;
+}
+
+.radio-wrapper-item{
+    margin-right: 15px;
+}
+
 a{
     text-decoration: none;
     color: var(--primary-color);
