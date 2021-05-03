@@ -1,0 +1,14 @@
+@import url('./global.css');
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+footer p{
+    color: #fff;
+}
+

@@ -1,0 +1,23 @@
+main{
+    display: flex;
+    min-height: 100vh;                                                                          
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+main section h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin: 20px 0px;
+}
+
+main section p {
+    line-height: 25px;
+}

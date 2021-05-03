@@ -1,0 +1,66 @@
+*{
+    outline: none;
+}
+
+main{
+    display: flex;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+main section{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+main section h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+main > section > form > div.field-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+main > section > form > div.field-wrapper > input, textarea {
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+main > section.map-wrapper > label {
+    margin: 10px 0px;
+}
+
+main > section.map-wrapper > iframe{
+    width: 100%;
+    height: 50%;
+}
+
+input[type="submit"]{
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.label-form{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
