@@ -1,4 +1,4 @@
-main{
+main {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
@@ -13,7 +13,7 @@ main section {
     padding: 0px 20px;
 }
 
-form{
+form {
     width: 100%;
 }
 
@@ -21,13 +21,19 @@ section.img-wrapper img {
     height: 60%;
 }
 
-input[type="text"], input[type="email"], input[type="submit"], textarea
-{
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
     padding: 5px;
     outline: none;
 }
 
-input[type="submit"]{
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
     border: none;
     background-color: var(--primary-color);
     color: #fff;
@@ -36,48 +42,51 @@ input[type="submit"]{
     font-weight: bold;
 }
 
-h1{
+h1 {
     font-size: 50px;
 }
 
-label{
+label {
     font-weight: bold;
     font-size: 18px;
 }
 
-.label-form{
+.label-form {
     margin: 10px 0px;
 }
 
-.title{
+.title {
     font-weight: bold;
     text-transform: uppercase;
     color: var(--primary-color);
     margin: 10px 0px;
 }
 
-.form-wrapper{
+.form-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.form-field-wrapper{
+.form-field-wrapper {
     display: flex;
     flex-direction: column;
     margin: 20px 0px;
 }
 
-.checkbox-wrapper, .radio-wrapper {
+.checkbox-wrapper,
+.radio-wrapper {
     display: flex;
     justify-content: flex-start;
     margin: 10px 0px;
 }
 
-.checkbox-wrapper-item, .radio-wrapper-item {
+.checkbox-wrapper-item,
+.radio-wrapper-item {
     margin-right: 15px;
     cursor: pointer;
 }
 
-.checkbox-wrapper-item > label, .radio-wrapper-item > label {
+.checkbox-wrapper-item>label,
+.radio-wrapper-item>label {
     font-weight: unset;
 }
