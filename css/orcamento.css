@@ -28,7 +28,8 @@ section.img-wrapper img {
 input[type="text"],
 input[type="email"],
 input[type="submit"],
-textarea {
+textarea,
+select {
     padding: 5px;
     outline: none;
 }
