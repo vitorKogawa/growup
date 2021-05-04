@@ -90,6 +90,16 @@
                     <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
                 </div>
                 <div class="form-field-wrapper">
+                    <label class="label-form">Forma de pagamento</label>
+                    <select name="forma_pagamento" id="forma_pagamento">
+                        <option value="" selected disabled>Selecione uma opção</option>
+                        <option value="debito">Débito</option>
+                        <option value="credito">Crédito</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="transferencia_bancaria">Transferência Bancária</option>
+                    </select>
+                </div>
+                <div class="form-field-wrapper">
                     <input type="submit" value="Consultar orçamento">
                 </div>
             </form>
