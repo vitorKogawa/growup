@@ -1,6 +1,6 @@
-main{
+main {
     display: flex;
-    min-height: 100vh;                                                                          
+    min-height: 100vh;
 }
 
 main section {
@@ -10,7 +10,7 @@ main section {
     flex: 0.5;
 }
 
-main section h1{
+main section h1 {
     font-size: 40px;
     font-weight: bold;
     text-transform: uppercase;
@@ -20,4 +20,36 @@ main section h1{
 
 main section p {
     line-height: 25px;
+}
+
+main section.content-wrapper>a {
+    width: 30%;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+main section.content-wrapper>a:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+main section.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>section.logo-wrapper>img {
+    width: 90%;
 }
