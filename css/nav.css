@@ -1,6 +1,5 @@
 @import url('./global.css');
-
-header{
+header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,11 +14,24 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     margin: 0px 30px;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: #fff;
+}
+
+header nav ul li a:after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    transition: 0.5s;
+}
+
+header nav ul li:hover a:after {
+    width: 100%;
 }
